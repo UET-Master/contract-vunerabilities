@@ -14,11 +14,11 @@ contract Caller {
 		calleeAddress = _calleeAddress;
 	}
 
-	function callCalleeFunction(uint8 value) public returns (bytes memory) {
-		(, bytes memory bytesValue) = calleeAddress.call(
+	function callCalleeFunction(uint8 value) public returns (uint8) {
+		(bool success, bytes memory bytesValue) = calleeAddress.call(
 			abi.encodeWithSignature("doubleValue(uint8)", value)
 		);
 
-		return bytesValue;
+		return 100;
 	}
 }

@@ -18,6 +18,6 @@ contract Caller {
 		Callee callee = Callee(calleeAddress);
 		uint8 doubleValue = callee.doubleValue(value);
 
-		return doubleValue;
+		return 100;
 	}
 }
