@@ -1,3 +1,3 @@
 # contract-vunerabilities
 
-The knowwn vulnerabilities in the smart contracts written by Solidity
+The known vulnerabilities in the smart contracts written by Solidity
